@@ -37,7 +37,10 @@ const About = () => {
       </div>
 
       <div className="pad row mb-5 m-auto">
-        <div className="pt-5 pb-5 white-bg page-scaler rounded justify-content-center mb-5 responsive-text pb-3 dark-text ">
+        <div 
+        className="pt-5 pb-5 white-bg page-scaler rounded justify-content-center mb-5 responsive-text pb-3 dark-text" 
+         style={{boxShadow: "1px 1px 3px rgba(0, 0, 0, 0.2)"}}
+         >
           <div className="col-sm-12 col-md-9 m-auto mt-5">
             <div className="text-center">
               <svg

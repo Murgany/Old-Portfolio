@@ -29,7 +29,7 @@ const Projects = () => {
       className="blue-text"
       style={{ backgroundColor: "#c3d4ee", borderTop: "80px solid #c3d4ee", borderBottom: "80px solid #c3d4ee" }}
     >
-      <Row className="justify-content-center mt-5 pad">
+      <Row className="page-scaler justify-content-center mt-5 pad">
         <div className="text-center mt-5">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -130,7 +130,7 @@ const Projects = () => {
         {!isCompleted ? (
           <>
             {" "}
-            <div className="d-grid mt-4 mb-5 pb-1">
+            <div className="d-grid mt-4 mb-5">
               <button
                 onClick={loadMore}
                 type="button"

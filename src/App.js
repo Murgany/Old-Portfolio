@@ -6,64 +6,56 @@ import Home from "./components/Home";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import About from "./components/About";
-import Services from "./components/Services"
+import Services from "./components/Services";
+// import Offer from "./components/Offer";
+
 import WhatsAppWidget from "react-whatsapp-chat-widget";
 import "react-whatsapp-chat-widget/index.css";
 
 function App() {
 
-// whatsapp chat widget 
-// (function(d, s, id){
-//   var js, el = d.getElementsByTagName(s)[0];
-//   if (d.getElementById(id)) {return;}
-//   js = d.createElement(s); js.id = id;
-//   js.src = 'https://widget.rasayel.io/whatsapp/rasayel-waba-widget.iife.js';
-//   el.parentNode.insertBefore(js, el);
-//   js.onload = function () {
-//     var w = window.RasayelWabaWidget;
-//     w.create({"title":"Rawy Murgany","subtitle":"Replies within an hour.","message":"Got a problem to solve?","avatar":"full-stack-developer.png","phone":"+201507833501","cta":"Tell me about it"})
-//   }
-// }(document, 'script', 'rasayel-js'));
-
-
   return (
-    <Container className="App body" fluid>
-
-
-<WhatsAppWidget
-			phoneNo="201507833501"
-			position="right"
-			widgetWidth="300px"
-			widgetWidthMobile="260px"
-			autoOpen={true}
-			autoOpenTimer={5000}
-			messageBox={true}
-			// messageBoxTxt="Hi there, are you available?"
-			iconSize="38"
-			iconColor="#4d53b3"
-			iconBgColor="#c3d4ee"
-			headerIcon="full-stack-developer.png"
-			// headerIconColor="pink"
-			headerTxtColor="#FDFEFF"
-			headerBgColor="#6f7bc5"
-			headerTitle="Rawy Murgany"
-			headerCaption="Online"
-			bodyBgColor="#c3d4ee"
-			chatPersonName="Support"
-			chatMessage={<>Hi there 👋 <br /><br /> How can I help you?</>}
-			footerBgColor="#6f7bc5"
-			placeholder="Type a message.."
-			btnBgColor="yellow"
-			btnTxt="Start Chat"
-			btnTxtColor="black"
-		/>
-
+    <Container className="App body" fluid>		    
+      <WhatsAppWidget
+        phoneNo="201507833501"
+        position="right"
+        widgetWidth="300px"
+        widgetWidthMobile="220px"
+        autoOpen={true}
+        autoOpenTimer={5000}
+        messageBox={true}
+        // messageBoxTxt=""
+        iconSize="38"
+        iconColor="#FDFEFF"
+        iconBgColor="#25D366"
+		// iconBgColor="#FFFF00"
+        // headerIcon="favicon.ico"
+        headerIconColor="#4d53b3"
+        headerTxtColor="#4d53b3"
+        headerBgColor="#FDFEFF"
+        headerTitle="Rawy Murgany"
+        headerCaption="Online"
+        bodyBgColor="#c3d4ee"
+        chatPersonName="Rawy"
+        chatMessage={
+          <>
+            Hi there 👋 <br /><br /> 
+            Got a problem to solve ? 
+          </>
+        }
+        footerBgColor="#FDFEFF"
+        placeholder="Type a message.."
+        btnBgColor="#25D366"
+        btnTxt="WhatsApp me"
+        btnTxtColor="#25D366"
+      />
 
       <Row>
         <Navbar />
         <Home />
         <About />
         <Services />
+		{/* <Offer /> */}
         <Projects />
         <Contact />
       </Row>

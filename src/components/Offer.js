@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
 
-const Services = () => {
+const Offer = () => {
 
   return (
     <Container
@@ -25,34 +25,10 @@ const Services = () => {
           <h1 className="headers white-text mt-3 text-center">WHAT I DO</h1>
         </div>
 
-        <Row className="">
-          <div className="col-12 col-sm-12 col-md-4">
-            <h5 className="headers">Robust Back End Development</h5>
-            <p className="responsive-text">
-              Robust back end systems and solutions with Python &
-              Django. Integrated  with PostgreSQL, MySQL, or SQlite databases. 
-              Why Django? Because it's the platform for perfectionists.
-            </p>
-          </div>
-          <div className="col-12 col-sm-12 col-md-4">
-            <h5 className="headers">Front End Development</h5>
-            <p className="responsive-text">
-              Creating awesome user interfaces from existing designs  
-              or creating unique new ones from scratch with your brand in mind.
-            </p>
-          </div>
+        
 
-          <div className="col-12 col-sm-12 col-md-4">
-            <h5 className="headers">Responsive Web Design</h5>
-            <p className="responsive-text">
-              Responsive, mobile-first layouts that seemlessly fit in
-              any screen size.
-            </p>
-          </div>
-        </Row>
-
-        <Row className="pad items-center mt-5">
-            <h5 className="headers text-center pad mt5">Special Offer</h5>
+        <Row className="col-m pad">
+            <h5 className="headers">Special Offer</h5>
             <p className="responsive-text">
               Straight up, I'm a refugee trying to build my portfolio and earn a living to support my family. 
               Hire me through my Upwork account or on PeoplePerHour and I will solve your problem at 25% discount. 
@@ -67,4 +43,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Offer;

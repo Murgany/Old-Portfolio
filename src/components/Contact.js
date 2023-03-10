@@ -9,7 +9,7 @@ const Contact = () => {
 
   return (
     <Container className="footer-bg justify-content-center" id="contact" fluid>
-      <Row className="footer-conten justify-content-center items-center text-center mt-5">
+      <Row className="page-scaler pad justify-content-center items-center text-center mt-5">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="35"
@@ -98,27 +98,30 @@ const Contact = () => {
               </Button>
             </span>
             <span>
-              <form className="textarea">
+              <form className="textarea ">
                 <input
                   type="text"
                   placeholder="Name"
-                  className="rounded mb-2 mt-2 light-bg"
+                  className="rounded mb-2 mt-2 blue-bg white-text"
+                  style={{borderBottom: "2px solid #FDFEFF"}}
                 />
                 <br />
                 <input
                   type="text"
-                  placeholder="Email Address"
-                  className="rounded mb-2 mt- light-bg"
+                  placeholder="Email"
+                  className="rounded mb-2 mt-2 blue-bg white-text"
+                  style={{borderBottom: "2px solid #FDFEFF"}}
                 />
                 <br />
                 <textarea
-                  className="light-bg rounded textarea"
+                  className="light-b blue-bg rounded textarea white-text"
+                  style={{borderBottom: "2px solid #FDFEFF"}}
                   type="text"
                   placeholder="Message"
                 />
                 <br />
 
-                <div className="d-grid mt-3 mb-5 pb-1">
+                <div className="d-grid mt-5 mb-4 pb-1">
                   <button
                     type="button"
                     className="load-more-button"
