@@ -24,7 +24,11 @@ const Projects = () => {
   }, []);
 
   return (
-    <Container id="projects" className="blue-text" style={{ backgroundColor: '#c3d4ee' }}>
+    <Container
+      id="projects"
+      className="blue-text"
+      style={{ backgroundColor: "#c3d4ee", borderTop: "80px solid #c3d4ee", borderBottom: "80px solid #c3d4ee" }}
+    >
       <Row className="justify-content-center mt-5 pad">
         <div className="text-center mt-5">
           <svg
@@ -39,15 +43,14 @@ const Projects = () => {
           </svg>
           <h4 className="mb-2 text-center headers mt-3">WEB APPS I'VE BUILT</h4>
         </div>
-        <Row className="justify-content-center mt-5 pad">
-
-        {initialPosts.map((project, idx) => (
-          <div key={idx} className="col-sm-6 col-md-6 col-lg-4 col-12 m-0">
-            <Card
+        <Row className="justify-content-center mt-5">
+          {initialPosts.map((project, idx) => (
+            <div key={idx} className="col-sm-6 col-md-6 col-lg-4 col-12 m-0">
+              <Card
               className="mb-4 m-0 pb-4 card"
               style={{ minHeight: "400px" }}
             >
-              <div className="project-image-container">
+              <div>
                 <img
                   className="img-fluid project-image"
                   alt="web developer projects"
@@ -55,8 +58,8 @@ const Projects = () => {
                 />
               </div>
               <div className="mt-3">
-                <h1 className="headers text-center blue-text">{project.title}</h1>
-                <h6 className="dark-text text-center ps-2"><strong>{project.subtitle}</strong></h6>
+                <h1 className="headers slide-in-inner text-center blue-text">{project.title}</h1>
+                <h6 className="dark-text ps-2"><strong>{project.subtitle}</strong></h6>
               </div>
 
               <Card.Body
@@ -78,12 +81,12 @@ const Projects = () => {
                         rel="noreferrer"
                         style={{ borderRadius: "20px" }}
                         variant="light"
-                        className="btn-sm p-1 icons git-link"
+                        className="btn-sm p-1 git-link"
                         id="icons"
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          className="bi bi-code-slash p-1 contact-icons"
+                          className="bi bi-code-slash p-1 rotating-icons"
                           viewBox="0 0 16 16"
                         >
                           <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" />
@@ -99,12 +102,12 @@ const Projects = () => {
                         rel="noreferrer"
                         style={{ borderRadius: "20px" }}
                         variant="light"
-                        className="btn-sm p-1 icons site-link"
+                        className="btn-sm p-1 site-link"
                         id="icons"
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          className="bi bi-envelope p-1 contact-icons"
+                          className="bi bi-envelope p-1 rotating-icons"
                           viewBox="0 0 16 16"
                         >
                           <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
@@ -120,31 +123,34 @@ const Projects = () => {
               </Card.Body>
 
             </Card>
-          </div>
-        ))}
+            </div>
+          ))}
         </Row>
-        
-         {!isCompleted ? (
-            <> <div className="d-grid mt-4 mb-5 pb-1">
+
+        {!isCompleted ? (
+          <>
+            {" "}
+            <div className="d-grid mt-4 mb-5 pb-1">
               <button
                 onClick={loadMore}
                 type="button"
                 className="load-more-button-2"
               >
-                 More +
+                More +
               </button>
-            </div>  </>
-          ) : (
-            <>
-             {/* <button
+            </div>{" "}
+          </>
+        ) : (
+          <>
+            {/* <button
                 // onClick={loadMore}
                 type="button"
                 className="load-more-button-2"
               >
                 Show less -
               </button> */}
-            </>
-          )}
+          </>
+        )}
       </Row>
     </Container>
   );

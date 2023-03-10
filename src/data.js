@@ -1,11 +1,6 @@
 export const aboutMeData = {
   about_me_data:
-    "Hi, I've been through a lot, I mean... in general work experience,\
-but my final stop and arguably something I have fallen in love with, is programming and creating awesome web apps and systems. I\
-was born in Sudan, grew up a refugee in Uganda and living as a refugee in Egypt. Being a refugee comes with lots of difficulties\
-and barriers, that's why you will see sudden changes in careers and a gap in my profile. The result is a cocktail of diverse \
-experiences that perfectly work together when needed. I'm about to take you on a roller coaster of hard earned achievements, ready?\
-...click my linkedin profile in the menu or in the footer sections.",
+    "Hi, I've been through a lot, I mean... in general work experience, but my final stop and arguably something I have fallen in love with, is programming and creating awesome web apps and systems. I was born in Sudan, grew up a refugee in Uganda and living as a refugee in Egypt. Being a refugee comes with lots of difficulties and barriers, that's why you will see sudden changes in careers and a gap in my profile. The result is a cocktail of diverse experiences that perfectly work together when needed. I'm about to take you on a roller coaster of hard earned achievements, ready? ...click my linkedin profile in the menu or in the footer sections.",
 };
 
 export const projects = [
@@ -14,12 +9,7 @@ export const projects = [
     company_link: "https://www.merckgroup.com/en",
     subtitle: "A Merck Group digital engagement center website",
     description:
-      "Features an optional, timed questionnaire modal pop-up. Admin can choose whether or not survey perticipants must login/signup before answering any questions.\
-    user' answers are saved in MySQL database. The admin dashboard features a survey results view and a button to export the results to Excel-compatible CSV file. User data is also exportable in the same way.\
-    Rsponsive design (fits all screen sizes).\
-    This is a merck group digital engagement center website. \
-    They provide comprehensive scientific content and case studies digitally across different digital platforms including this website.\
-    Simple looking on the client side, with the work-load on the backend side and the heavily Customized Django admin dashboard",
+      "Features an optional, timed questionnaire modal pop-up. Admin can choose whether or not survey perticipants must login/signup before answering any questions. User' answers are saved in MySQL database. The admin dashboard features a survey results view and a button to export the results to Excel-compatible CSV file. User data is also exportable in the same way. Responsive design (fits all screen sizes). This is a merck group digital engagement center website. They provide comprehensive scientific content and case studies digitally across different digital platforms including this website. Simple looking on the client side, with the work-load on the backend side and the heavily Customized Django admin dashboard",
     // description:"Merck Digital Engagement Center is a designed program developed especially for you. We provide comprehensive scientific content and case studies digitally across different digital platforms. ",
     technology: "Django, HTML, CSS, Bootstrap, Ajax, JQuery.",
     image: "./medecgulf.png",
@@ -133,7 +123,7 @@ export const skills = [
     link: "https://getbootstrap.com/",
     percentage: 90,
     now: 90,
-    image: "./bootstrap.svg",
+    image: "./Bootstrap.png",
   },
   {
     name: "Ajax",
@@ -167,6 +157,6 @@ export const skills = [
     name: "Framework specific libraries",
     percentage: 90,
     now: 90,
-    image: "./other-libraries.svg",
+    image: "./django-libraries.svg",
   },
 ];

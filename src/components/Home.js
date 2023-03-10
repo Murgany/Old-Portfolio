@@ -33,8 +33,8 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="col-12 col-sm-12 col-md-3  m-auto header-text-wrap slide-in-inner title">
-          <img  className="img-fluid image white-bg" alt="web developer" src="./10.png" />
+        <div className="col-12 col-sm-12 col-md-3  m-auto header-text-wrap slide-in-inner title" style={{borde: "1px solid #fff"}}>
+           <img  className="img-fluid image white-bg" alt="web developer" src="./full-stack-developer.png" />
         </div>
 
         <div className="scroll-down-btn text-center reveal-inner">
@@ -51,7 +51,7 @@ const Home = () => {
               width="16"
               height="16"
               fill="#4d53b3"
-              className="bi bi-arrow-down App p-1 contact-icons "
+              className="bi bi-arrow-down App p-1 rotating-icons "
               viewBox="0 0 16 16"
             >
               <path

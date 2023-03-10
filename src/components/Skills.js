@@ -6,7 +6,7 @@ import ProgressBar from "react-bootstrap/ProgressBar";
 
 const Skills = () => {
   const [data, setData] = useState([]);
-  const [isCompleted, setIsCompleted] = useState(false);
+  const [setIsCompleted] = useState(false); //isCompleted, 
   const [index, setIndex] = useState(4);
   const initialPosts = ShowMore(data, 0, index);
 
@@ -58,6 +58,7 @@ const Skills = () => {
                         src={skill.image}
                         className="me-2 p-1 white-bg rounded"
                         style={{ width: "25px", height: "25px" }}
+                        alt={skill.name}
                       />
                       {skill.name}
                     </a>
