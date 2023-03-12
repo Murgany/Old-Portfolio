@@ -13,6 +13,10 @@ const Home = () => {
     <Container className="header-bg pt-5" fluid>
       <Row>
         <div className="col-12 col-sm-12 col-md-9">
+    
+    
+    
+    
           <div
             className="slide-in m-auto justify-content-end light-text ps-3"
             style={{ borderLeft: "6px solid #FDFEFF", width: "90%" }}
@@ -61,6 +65,15 @@ const Home = () => {
             </svg>
           </Button>
         </div>
+
+        <div className="row items-cente m-  justify-content-center">
+          <div className="intro-banner-vdo-play-btn pinkB">
+            <span className="ripple ripple-bg"></span>
+            <span className="ripple ripple-bg"></span>
+            <span className="ripple ripple-bg"></span>
+          </div>
+        </div>
+
       </Row>
     </Container>
   );
