@@ -1,15 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Righteous");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
-/* @import url("//fonts.googleapis.com/css?family=Life+Savers"); */
-
-/* @font-face {
-  font-family: "Montserrat Alternates" ,sans-serif;
-  src: url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates") format("woff"),
-    url("https://fonts.googleapis.com/css?family=Righteous");
-  font-weight: 400;
-  font-style: normal;
-} */
+@import url("//fonts.googleapis.com/css?family=Life+Savers");
 
 .body {
   width: 100%;
@@ -17,7 +9,6 @@
   /* font-family: "Montserrat Alternates", sans-serif; */
   /* font-family: 'Roboto', sans-serif; */
   font-family: "Poppins", sans-serif;
-  /* font-family: 'Life Savers', serif; */
   font-display: fallback;
   letter-spacing: auto;
   line-height: 1.6;
@@ -97,16 +88,24 @@
   align-items: center;
   width: 100%;
 }
-
+/* 
 @media screen and (max-width: 294px) {
   .header-bg,
   .service-bg,
   .footer-bg {
     background-image: url("/public/bg-mobile.svg");
   }
-}
+} */
 
-@media screen and (min-width: 295px) {
+/* @media screen and (min-width: 295px) {
+  .header-bg,
+  .service-bg,
+  .footer-bg {
+    background-image: url("/public/mini-tab.svg");
+  }
+} */
+
+@media screen and (max-width: 360px) {
   .header-bg,
   .service-bg,
   .footer-bg {
@@ -114,15 +113,7 @@
   }
 }
 
-@media screen and (min-width: 370px) {
-  .header-bg,
-  .service-bg,
-  .footer-bg {
-    background-image: url("/public/tab.svg");
-  }
-}
-
-@media screen and (min-width: 690px) {
+@media screen and (min-width: 600px) {
   .header-bg,
   .service-bg,
   .footer-bg {
@@ -334,7 +325,8 @@
 
 /* headings */
 .headers {
-  font-family: "Righteous", serif;
+/*   font-family: "Righteous", serif; */
+  font-family: 'Life Savers', serif;
   font-weight: 500;
 }
 
