@@ -49,18 +49,8 @@ const Services = () => {
               any screen size.
             </p>
           </div>
+    
         </Row>
-
-//         <Row className="pad items-center mt-5">
-//             <h5 className="headers text-center pad mt5">Special Offer</h5>
-//             <p className="responsive-text">
-//               Straight up, I'm a refugee trying to build my portfolio and earn a living to support my family. 
-//               Hire me through my Upwork account or on PeoplePerHour and I will solve your problem at 25% discount. 
-//               You get what you expect for a litle less and I get a litle more exposure. <br />
-//               Sounds good? <span><a href="#contact" className="blue-text light-bg">
-//                 <strong>Message me now.</strong></a></span> 
-//             </p>
-//          </Row>
 
       </Row>
     </Container>
